@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Firestore CRUD</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <h1>Firestore CRUD</h1>
+    <div id="dos">
+        <div class="creacionForm" id="crear">
+            <form id="create-form">
+                <h2>Crear documento</h2>
+                <input type="text" name="nombre" class="form" placeholder="Nombre" required>
+                <input type="text" name="correo" class="form" placeholder="Correo" required>
+                <input type="text" name="user" class="form" placeholder="Usuario" required>
+                <input type="password" name="pass" class="form" placeholder="Contraseña" required>
+                <button type="submit" id="btnC">Crear</button>       
+            </form>
+        </div>
+    </div>
+    <hr>
+
+    <form id="read-form">
+        <h2>Leer documentos</h2>
+        <button type="submit">Leer</button>
+    </form>
+
+    <hr>
+
+    <form id="update-form">
+        <h2>Actualizar documento</h2>
+        <input type="text" id="update-id" placeholder="Id del documento">
+        <br>
+        <input type="text" id="update-age" placeholder="Nuevo dato">
+        <br>
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <hr>
+
+    <form id="delete-form">
+        <h2>Eliminar documento</h2>
+        <label for="delete-id">ID del documento:</label>
+        <input type="text" id="delete-id" required>
+        <br>
+        <button type="submit">Eliminar</button>
+
+    </form>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+
+
+</body>
+<script src="js/modulos.js" type="module"></script>
+
+</html>
